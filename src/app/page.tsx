@@ -12,7 +12,7 @@ export default function Home() {
         <Link href="/create-post"><Button size={"lg"} className="w-fit mt-4 text-xl font-bold ">Start Creating </Button></Link>
       </div >
       <div className="p-3 w-1/2">
-      <Image src="/hero.jpeg" alt="hero" width={500} height={500} className="object-contain "/>
+      <Image src="/assets/hero.jpeg" alt="hero" width={500} height={500} className="object-contain "/>
       </div>
     </div>
  </main>

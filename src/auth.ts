@@ -10,6 +10,9 @@ import bcryptjs from "bcryptjs"
 const publicRoutes = ["/login","/signup" ,"/"]
 const authRoutes = ["/login","/signup"]
 
+const imageRegex = /\.(jpg|jpeg|png|gif|bmp|svg|webp|ico)$/i;
+
+
 export const {handlers,signIn,signOut,auth} = NextAuth({
     providers:[
         Credentials({
@@ -69,6 +72,12 @@ export const {handlers,signIn,signOut,auth} = NextAuth({
             const isLoggedIn = !!auth?.user;
 
             const {pathname}= nextUrl;
+
+            if (pathname.startsWith('/assets')) {
+                if (imageRegex.test(pathname)) {
+                  return true;
+                }
+              }
             if(publicRoutes.includes(pathname)){
                 return true;
             }

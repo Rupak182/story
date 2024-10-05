@@ -14,7 +14,7 @@ export default  async function Header() {
   return (
     <div className='flex justify-around items-center '>
       <Link href="/">
-        <Image src="/logo.svg" alt='logo'  width={50} height={50}/>
+        <Image src="/assets/logo.svg" alt='logo'  width={50} height={50}/>
       </Link>
 
 
