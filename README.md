@@ -37,7 +37,7 @@
 ## Installation
 
 
-Install the dependencies and devDependencies
+Install the dependencies and devDependencies:
 ```sh
 Clone the github repo.
 run npm install
