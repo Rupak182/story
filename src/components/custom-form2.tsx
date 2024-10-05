@@ -45,7 +45,6 @@ export default function CustomForm2() {
     });
     
       const onSubmit = async (values:z.infer<typeof SignUpSchema>) => {
-        console.log("Hello");
 
           try {
             const res:ServerActionResponse = await handleSignUp(values);
