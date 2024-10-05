@@ -39,7 +39,7 @@ export default async function page({params}:paramsType) {
     return (
         <main className='flex flex-col items-center mt-10 justify-center'>
 
-            <div className=" flex flex-col gap-4 mt-10 max-w-screen-xl ">
+            <div className=" flex flex-col gap-4 mt-10 w-full max-w-screen-xl h-full ">
 
                 {
                     story && 

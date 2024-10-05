@@ -22,7 +22,7 @@ export default async function PostsPage() {
 
             <h1 className='text-6xl font-bold'>All Posts</h1>
 
-            <div className=" flex flex-col gap-4 mt-10 max-w-screen-xl ">
+            <div className=" flex flex-col gap-4 mt-10 w-full max-w-screen-xl ">
                 {
 
                     stories.length==0 ? <h1 className='text-3xl'>No stories found</h1> :
